@@ -58,6 +58,8 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .portfolio-header {
     border-bottom: 1px solid var(--border-color);
@@ -98,6 +100,8 @@ body {
     justify-content: center;
     margin-right: 10px;
     fill: #757575;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .envelop-icon {
     width: 16px;
@@ -106,16 +110,18 @@ body {
     align-items: baseline;
     fill: #757575;
     margin: 1px 10px 0 0;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .envelop-icon:hover,
 .envelop-icon:focus {
     fill: currentColor;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .contacts-link {
     color: var(--secondary-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .page-nav {
     align-items: center;
@@ -125,23 +131,17 @@ body {
 .contacts-link:hover,
 .nav-links-link:hover {
     color: var(--hover-color);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 
 .phone-link:hover .phone-icon,
 .phone-link:focus .phone-icon {
     color: var(--hover-color);
     fill: var(--hover-color);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .mail-link:hover .envelop-icon,
 .mail-link:focus .envelop-icon {
     color: var(--hover-color);
     fill: var(--hover-color);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .current {
     color: var(--hover-color);
@@ -202,19 +202,25 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     visibility: visible;
     opacity: 1;
-    transition: opacity 250ms;
     transform: translateX(0);
-    transition: transform 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
     transform: translateX(-100%);
-    transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+.is-hidden {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .order-button {
     color: var(--light-color);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .button {
     display: flex;
@@ -235,8 +241,6 @@ body {
 .order-button:hover,
 .order-button:focus {
     background-color: #188ce8;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .order-button-container {
     margin-left: auto;
@@ -270,15 +274,14 @@ body {
     margin-right: 0;
 }
 .features-background-img {
-    width: 100;
-    height: 120;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
     background-color: #f5f4fa;
+    margin-bottom: 30px;
 }
 .features-icon {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
 }
 .feature-hl {
     font-size: 14px;
@@ -368,12 +371,11 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
-    margin: 0;
+    margin-bottom: 16px;
 }
 .soc-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
 }
 .soc-list-item {
     margin-right: 10px;
@@ -389,21 +391,21 @@ body {
     align-items: center;
     justify-content: center;
     background-color: white;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .soc-link:hover,
 .soc-link:focus {
     background-color: #2196f3;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .soc-link:hover .soc-link-icon,
 .soc-link:focus .soc-link-icon {
     fill: white;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .soc-link-icon {
     fill: #afb1b8;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .clients-list {
@@ -418,34 +420,33 @@ body {
     margin: 0;
 }
 .clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 92px;
     width: 170px;
     border-radius: 4px;
     border-width: 1px;
     border-color: #afb1b8;
     border-style: solid;
-    display: block;
-    align-items: center;
-    justify-content: center;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
-
+.clients-icon-wraper {
+    display: inline-block;
+}
 .clients-icon {
     fill: #afb1b8;
     width: 106px;
     height: 60px;
-    margin: 16px 32px;
 }
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
     fill: #2196f3;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .clients-link:hover,
 .clients-link:focus {
     border-color: #2196f3;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 
 .contacts-section-bottom {
@@ -467,6 +468,8 @@ body {
     padding: 6px 21px;
     background-color: var(--background-alt-color);
     border-radius: 4px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .filter-button:last-child {
     margin-right: 0;
@@ -478,8 +481,6 @@ body {
     border: none;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .filter-buttons-list {
     display: flex;
@@ -500,13 +501,13 @@ body {
     background-color: var(--light-color);
     position: relative;
     overflow: hidden;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .portfolio-list-item:hover,
 .portfolio-list-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .portfolio-list-item:nth-child(3n) {
     margin-right: 0;
@@ -527,16 +528,12 @@ body {
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
     transform: translateY(100%);
-    transition: transform cubic-bezier(0.4, 0, 0.2, 1),
-        opacity cubic-bezier(0.4, 0, 0.2, 1);
+    transition: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
 .portfolio-list-item:hover .portfolio-overlay-thumb {
     transform: translateY(0%);
     opacity: 1;
-    transition: transform cubic-bezier(0.4, 0, 0.2, 1),
-        opacity cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .portfolio-overlay-text-wraper {
     margin: 63px 28px;
@@ -578,12 +575,12 @@ body {
     letter-spacing: 0.03em;
     color: var(--light-color);
     margin-top: 20px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .address-list:hover,
 .address-list:focus {
     color: var(--hover-color);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 
 footer .logo-studio {
@@ -595,12 +592,12 @@ footer .address-link {
     line-height: 1.71;
     letter-spacing: 0.03em;
     opacity: 1;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 footer .address-link:hover,
 footer .address-link:focus {
     opacity: 0.6;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 footer .contacts-link {
     color: var(--light-color);
@@ -608,14 +605,14 @@ footer .contacts-link {
     padding: 0;
     line-height: 1.71;
     opacity: 0.6;
+    transition-property: background-color, opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 footer .contacts-link:focus,
 footer .contacts-link:hover {
     color: var(--light-color);
     opacity: 1;
-    transition-property: background-color, opacity;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .contacts-wraper {
     display: flex;
@@ -655,20 +652,20 @@ footer .contacts-link:hover {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .soc-link-allign:hover,
 .soc-link-allign:focus {
     background-color: #2196f3;
-    transition-property: background-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .soc-link-allign:hover .soc-link-icon-allign,
 .soc-link-allign:focus .soc-link-icon-allign {
-    transition-property: fill;
     fill: white;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
 }
 .soc-link-icon-allign {
     fill: white;
@@ -696,6 +693,8 @@ footer .contacts-link:hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .close-button-modal {
     position: absolute;
@@ -706,6 +705,8 @@ footer .contacts-link:hover {
     border-radius: 50%;
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 .close-button-modal:hover,
 .close-button-modal:focus {
@@ -718,4 +719,6 @@ footer .contacts-link:hover {
     margin: auto;
     width: 11px;
     height: 11px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
