@@ -209,8 +209,7 @@ input {
   margin-bottom: 48px;
 }
 
-.hero-button,
-.form-submit-btn {
+.hero-button {
   background-color: #4d5ae5;
   color: #fff;
   font-weight: 500;
@@ -234,7 +233,6 @@ input {
 .hero-button:focus {
   background-color: #404bbf;
 }
-.form-submit-btn:
 /* ------------- About Us Section -------------- */
 
 .about-us-section {
@@ -453,9 +451,9 @@ input {
   height: 100%;
   z-index: 999;
   display: flex;
-  /* opacity: 0;
+  opacity: 0;
   visibility: hidden;
-  pointer-events: none; */
+  pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-open {
@@ -500,6 +498,7 @@ input {
 }
 .modal-field {
   margin-bottom: 8px;
+  line-height: 0;
 }
 .input-wrap {
   position: relative;
@@ -509,7 +508,7 @@ input {
   font-family: 'roboto', 'sans-serif';
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.16;
   letter-spacing: 0.04em;
   margin-bottom: 4px;
   color: #8e8f99;
@@ -594,7 +593,29 @@ form-text:focus {
   background-color: #404bbf;
   fill: #f4f4fd;
 }
-
+.form-submit-btn {
+  background-color: #4d5ae5;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
+  display: block;
+  min-width: 169px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-submit-btn:hover,
+.form-submit-btn:focus {
+  background-color: #404bbf;
+}
 /* ------------------------Footer---------------------------- */
 
 .footer-section {
@@ -682,4 +703,12 @@ form-text:focus {
 .footer-soc-link:hover,
 footer-soc-link:focus {
   background-color: #31d0aa;
+}
+.subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.send-icon {
+  fill: #fff;
 }

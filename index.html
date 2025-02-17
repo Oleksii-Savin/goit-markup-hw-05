@@ -491,20 +491,24 @@
               class="form-text"
               placeholder="Text input"
             ></textarea>
+            <input
+              type="checkbox"
+              class="form-check visually-hidden"
+              name="policy"
+              value="true"
+              id="policy"
+            />
           </div>
-          <input
-            type="checkbox"
-            class="form-check visually-hidden"
-            name="policy"
-            value="true"
-            id="policy"
-          />
           <label for="policy" class="form-check-label">
             <span class="form-check-box"
               ><svg class="form-check-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-check"></use></svg></span
-            >I accept the terms and conditions of the
-            <a href="" class="policy-link-text">Privacy Policy</a>
+            >I accept the terms and conditions of the&nbsp;<a
+              href=""
+              class="policy-link-text"
+            >
+              Privacy Policy</a
+            >
           </label>
           <button type="submit" class="form-submit-btn">send</button>
         </form>
@@ -552,6 +556,26 @@
                 ></a>
               </li>
             </ul>
+          </div>
+          <div class="subscribe-wrapper">
+            <p class="subscribe-headline">Subscribe</p>
+            <form action="" class="suscribe-form">
+              <label aria-label="subscribe form">
+                <input
+                  type="email"
+                  class="subscribe-email"
+                  id="subscribe-email"
+                  name="subscribe-email"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="submit-email">
+                Subscribe
+                <svg class="send-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
